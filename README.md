@@ -1,31 +1,8 @@
-# Action Cable Examples
+# Rails Docker Example
 
-A collection of examples showcasing the capabilities of Action Cable.
+Source code for our step by step [tutorial on how to deploy a Rails app to production and staging with Docker and Docker Compose](deploying-a-rails-app-to-production-with-docker-pt-1#creating-a-docker-image-for-our-rails-project).
 
-## Dependencies
-
-You must have redis installed and running on the default port:6379 (or configure it in config/redis/cable.yml).
-
-### Installing Redis
-##### On Linux
-* `wget http://download.redis.io/redis-stable.tar.gz`
-* `tar xvzf redis-stable.tar.gz`
-* `cd redis-stable`
-* `make`
-* `make install`
-
-##### On Mac
-* `brew install redis`
-
-###### Note: You must have Ruby 2.2.2 installed in order to use redis
-
-## Starting the servers
-
-1. Run `./bin/setup`
-2. Run `./bin/cable`
-3. Open up a separate terminal and run: `./bin/rails server`
-4. One more terminal to run redis server: `redis-server`
-4. Visit `http://localhost:3000`
+The base Rails app is the [Action Cable example by DHH](https://github.com/rails/actioncable-examples).
 
 ## Live comments example
 
